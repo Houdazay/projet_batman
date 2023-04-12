@@ -101,20 +101,20 @@ figcaption summary
     cursor:pointer;
  }
 
- 
-figcaption summary .moins
- {
-    display:none;
- }
-
- figcaption details [open] summary .plus 
-{
-    display:none;
+ details   summary::before{
+	display: inline-block;
+	content: "+";
+	color: #222;
+	font-size: 3rem;
+    vertical-align: -.3rem;
+	font-weight: bolder;
+	margin-right: .5rem;
+	transform: rotate(0deg);
+	transition-duration: .5s;
 }
-
-figcaption details [open] summary .moins
-{
-    display:initial;
+details[open]  summary::before{
+    content: "-";
+    transform: rotate(360deg);
 }
 
 footer
