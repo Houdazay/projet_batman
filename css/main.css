@@ -1,0 +1,123 @@
+/* 
+    reset
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+
+html
+{
+    font-size: 60.5%;   
+    background:linear-gradient(to top, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.6) 50%), url(../asset/cover-batman.jpg)center top / cover no-repeat;
+    height: 50%;
+    background-color: var(--background-color);
+}
+
+body
+{
+    font: 1.6rem 'Roboto Slab' , sans-serif;
+    margin: 0;
+    letter-spacing: .1rem;
+    line-height: 1.6;
+  
+}
+
+h1,h2,figure,figcaption,p,ul,li strong
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: lighter; 
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+img
+{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+:root
+{
+    --background-color: #e0e0e0;
+    --header-background-color:#222222;
+    --header-title-color: #fff5f5fc;
+    --figure-color: #f9fafa;
+    --text-color:rgb(343434);
+    --list-color:#e9e9e9;
+}
+
+header h1
+{
+    text-align: center;
+    padding: 0rem;
+    color: var(--header-title-color);
+    background-color: var(--header-background-color);
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+header h1::before
+ {
+    content: "\1F3AC";
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+main figure
+{
+    max-width: 70rem;
+    margin: 5rem auto;
+    padding: 1rem;
+    background-color: var(--figure-color);
+}
+
+figcaption ul li, details
+{
+    padding: 1rem;
+    color: var();
+ }
+
+figcaption ul li:nth-child(2), :is(ul li:nth-child(4)), details
+{
+    background-color: var(--list-color);
+ }
+
+figcaption details
+{
+    
+    padding: 10px;
+}
+
+figcaption summary
+ {
+    display: flex;
+    align-items:center;
+    cursor:pointer;
+ }
+
+ 
+figcaption summary .moins
+ {
+    display:none;
+ }
+
+ figcaption details [open] summary .plus 
+{
+    display:none;
+}
+
+figcaption details [open] summary .moins
+{
+    display:initial;
+}
+
+footer
+{
+    text-align: left;
+}
